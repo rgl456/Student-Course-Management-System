@@ -649,6 +649,588 @@
             </ReqHistory>
           </value>
         </entry>
+        <entry key="26">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;firstName&quot;: &quot;Ravi&quot;,&#10;  &quot;lastName&quot;: &quot;mohan&quot;,&#10;  &quot;email&quot;: &quot;ravi@gmail.com&quot;,&#10;  &quot;dateOfBirth&quot;: &quot;2000-03-10&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students" />
+              <option name="id" value="26" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}" />
+              <option name="time" value="2026-03-10 22:50:25" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="27">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{id}" />
+              <option name="id" value="27" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}" />
+              <option name="time" value="2026-03-10 22:50:44" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="28">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{id}/details" />
+              <option name="id" value="28" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="01" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:[],&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}" />
+              <option name="time" value="2026-03-10 22:51:20" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="29">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students" />
+              <option name="id" value="29" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}]" />
+              <option name="time" value="2026-03-10 22:51:37" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="30">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="30" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T22:52:01.8703424&quot;}" />
+              <option name="time" value="2026-03-10 22:52:01" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="31">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{id}" />
+              <option name="id" value="31" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="01" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}" />
+              <option name="time" value="2026-03-10 22:58:55" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="32">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="32" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T22:59:13.8760872&quot;}" />
+              <option name="time" value="2026-03-10 22:59:13" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="33">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="33" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T23:00:30.9478832&quot;}" />
+              <option name="time" value="2026-03-10 23:00:30" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="34">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="34" />
+              <option name="method" value="PATCH" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Tue Mar 10 23:00:38 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Method Not Allowed, status=405).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-03-10 23:00:38" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="35">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="35" />
+              <option name="method" value="PATCH" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:404,&quot;message&quot;:&quot;Course not found with id: 1&quot;,&quot;timeStamp&quot;:&quot;2026-03-10T23:00:54.6218765&quot;}" />
+              <option name="time" value="2026-03-10 23:00:54" />
+              <option name="uri" value="/api/v1/courses/{id}/enroll" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="36">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;courseCode&quot;: &quot;dfsefew&quot;,&#10;  &quot;title&quot;: &quot;ffwewewgw&quot;,&#10;  &quot;description&quot;: &quot;swgwgwgwg&quot;,&#10;  &quot;instructor&quot;: &quot;gwewgwgw&quot;,&#10;  &quot;maxCapacity&quot;: 50&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="36" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;courseCode&quot;:&quot;dfsefew&quot;,&quot;title&quot;:&quot;ffwewewgw&quot;,&quot;description&quot;:&quot;swgwgwgwg&quot;,&quot;instructor&quot;:&quot;gwewgwgw&quot;,&quot;maxCapacity&quot;:50,&quot;currentEnrollment&quot;:0,&quot;availableSpots&quot;:50,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;createdAt&quot;:&quot;2026-03-10T23:01:24.165341&quot;}" />
+              <option name="time" value="2026-03-10 23:01:24" />
+              <option name="uri" value="/api/v1/courses" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="37">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="37" />
+              <option name="method" value="PATCH" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;courseCode&quot;:&quot;dfsefew&quot;,&quot;title&quot;:&quot;ffwewewgw&quot;,&quot;description&quot;:&quot;swgwgwgwg&quot;,&quot;instructor&quot;:&quot;gwewgwgw&quot;,&quot;maxCapacity&quot;:50,&quot;currentEnrollment&quot;:1,&quot;availableSpots&quot;:49,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;createdAt&quot;:&quot;2026-03-10T23:01:24.165341&quot;}" />
+              <option name="time" value="2026-03-10 23:01:32" />
+              <option name="uri" value="/api/v1/courses/{id}/enroll" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="38">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;firstName&quot;: &quot;sswee&quot;,&#10;  &quot;lastName&quot;: &quot;weefe&quot;,&#10;  &quot;email&quot;: &quot;fweg@fww.com&quot;,&#10;  &quot;dateOfBirth&quot;: &quot;2000-03-10&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="38" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Tue Mar 10 23:01:56 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Not Found, status=404).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-03-10 23:01:56" />
+              <option name="uri" value="/api/v1/students" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="39">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;firstName&quot;: &quot;sswee&quot;,&#10;  &quot;lastName&quot;: &quot;weefe&quot;,&#10;  &quot;email&quot;: &quot;fweg@fww.com&quot;,&#10;  &quot;dateOfBirth&quot;: &quot;2000-03-10&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students" />
+              <option name="id" value="39" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:2,&quot;firstName&quot;:&quot;sswee&quot;,&quot;lastName&quot;:&quot;weefe&quot;,&quot;email&quot;:&quot;fweg@fww.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T23:02:07.676337&quot;}" />
+              <option name="time" value="2026-03-10 23:02:07" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="40">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="40" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T23:02:29.540301&quot;}" />
+              <option name="time" value="2026-03-10 23:02:29" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="41">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="41" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T23:07:26.980546&quot;}" />
+              <option name="time" value="2026-03-10 23:07:27" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="42">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="42" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;status&quot;:400,&quot;message&quot;:&quot;Course Service is currently unavailable&quot;,&quot;timestamp&quot;:&quot;2026-03-10T23:20:00.1065925&quot;}" />
+              <option name="time" value="2026-03-10 23:20:00" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="43">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="43" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;ravi@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[1],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T22:50:25.6053&quot;}" />
+              <option name="time" value="2026-03-10 23:21:25" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="44">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;courseCode&quot;: &quot;19EC500&quot;,&#10;  &quot;title&quot;: &quot;JAVA&quot;,&#10;  &quot;description&quot;: &quot;OOPS in JAVA&quot;,&#10;  &quot;instructor&quot;: &quot;RAGUL&quot;,&#10;  &quot;maxCapacity&quot;: 50&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="44" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:2,&quot;courseCode&quot;:&quot;19EC500&quot;,&quot;title&quot;:&quot;JAVA&quot;,&quot;description&quot;:&quot;OOPS in JAVA&quot;,&quot;instructor&quot;:&quot;RAGUL&quot;,&quot;maxCapacity&quot;:50,&quot;currentEnrollment&quot;:0,&quot;availableSpots&quot;:50,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;createdAt&quot;:&quot;2026-03-10T23:22:06.741433&quot;}" />
+              <option name="time" value="2026-03-10 23:22:06" />
+              <option name="uri" value="/api/v1/courses" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="45">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;firstName&quot;: &quot;Ravi&quot;,&#10;  &quot;lastName&quot;: &quot;mohan&quot;,&#10;  &quot;email&quot;: &quot;mohan@gmail.com&quot;,&#10;  &quot;dateOfBirth&quot;: &quot;2000-03-10&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students" />
+              <option name="id" value="45" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;mohan@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T23:22:35.952796&quot;}" />
+              <option name="time" value="2026-03-10 23:22:36" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="46">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{studentId}/enroll/{courseId}" />
+              <option name="id" value="46" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="courseId" value="1" />
+                  <entry key="studentId" value="3" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Ravi&quot;,&quot;lastName&quot;:&quot;mohan&quot;,&quot;email&quot;:&quot;mohan@gmail.com&quot;,&quot;dateOfBirth&quot;:&quot;2000-03-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;enrolledCourseIds&quot;:[1],&quot;enrolledCourses&quot;:null,&quot;createdAt&quot;:&quot;2026-03-10T23:22:35.952796&quot;}" />
+              <option name="time" value="2026-03-10 23:23:04" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="47">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{id}/details" />
+              <option name="id" value="47" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="3" />
+                </map>
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Tue Mar 10 23:23:21 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-03-10 23:23:22" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="48">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081/api/v1/students/{id}/details" />
+              <option name="id" value="48" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="3" />
+                </map>
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Tue Mar 10 23:27:06 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-03-10 23:27:06" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

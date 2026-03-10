@@ -1,4 +1,9 @@
 package com.ragul.StudentService.dto;
 
-public class ErrorResponse {
-}
+import java.time.LocalDateTime;
+
+public record ErrorResponse(
+        int status,
+        String message,
+        LocalDateTime timestamp
+) {}
