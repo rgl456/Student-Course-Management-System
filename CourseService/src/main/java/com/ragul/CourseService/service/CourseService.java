@@ -2,20 +2,22 @@ package com.ragul.CourseService.service;
 
 import com.ragul.CourseService.dto.CourseRequest;
 import com.ragul.CourseService.dto.CourseResponse;
+import com.ragul.CourseService.exception.CourseAlreadyExistsException;
+import com.ragul.CourseService.exception.CourseFullException;
+import com.ragul.CourseService.exception.CourseNotFoundException;
 import com.ragul.CourseService.mapper.CourseMapper;
 import com.ragul.CourseService.model.Course;
 import com.ragul.CourseService.model.CourseStatus;
 import com.ragul.CourseService.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.toList;
+import static com.ragul.CourseService.mapper.CourseMapper.mapToResponse;
+
 
 @Service
 @RequiredArgsConstructor
@@ -45,21 +47,21 @@ public class CourseService {
 
         Course savedCourse = courseRepository.save(course);
 
-        return CourseMapper.mapToResponse(savedCourse);
+        return mapToResponse(savedCourse);
     }
 
     @Transactional(readOnly = true)
     public CourseResponse getCourseById(Long id) {
         Course course = courseRepository.findById(id)
                 .orElseThrow(() -> new CourseNotFoundException("Course not found with id: " + id));
-        return CourseMapper.mapToResponse(course);
+        return mapToResponse(course);
     }
 
     @Transactional(readOnly = true)
     public CourseResponse getCourseByCode(String courseCode) {
         Course course = courseRepository.findByCourseCode(courseCode)
                 .orElseThrow(() -> new CourseNotFoundException("Course not found with code: " + courseCode));
-        return CourseMapper.mapToResponse(course);
+        return mapToResponse(course);
     }
 
     @Transactional(readOnly = true)
@@ -70,8 +72,31 @@ public class CourseService {
                 .toList();
     }
 
-
+    @Transactional(readOnly = true)
     public List<CourseResponse> getActiveCourses() {
+        List<Course> activeCourses = courseRepository.findAllByStatus(CourseStatus.ACTIVE);
+        return activeCourses.stream()
+                .map(CourseMapper::mapToResponse)
+                .toList();
+    }
 
+
+    public CourseResponse incrementEnrollment(Long courseId) {
+        Course course = courseRepository.findById(courseId)
+                .orElseThrow(() -> new CourseNotFoundException(
+                        "Course not found with id: " + courseId
+                ));
+
+        if(course.getCurrentEnrollment() >= course.getMaxCapacity()){
+            throw new CourseFullException("Course " + course.getCourseCode() + " is full");
+        }
+
+        course.setCurrentEnrollment(course.getCurrentEnrollment() + 1);
+
+        if (course.getCurrentEnrollment().equals(course.getMaxCapacity())) {
+            course.setStatus(CourseStatus.FULL);
+        }
+
+        return mapToResponse(courseRepository.save(course));
     }
 }

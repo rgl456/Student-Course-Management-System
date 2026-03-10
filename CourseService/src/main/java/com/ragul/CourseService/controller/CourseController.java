@@ -47,8 +47,8 @@ public class CourseController {
     }
 
     @PatchMapping("/{id}/enroll")
-    public ResponseEntity<CourseResponse> incrementEnrollment(@PathVariable Long id) {
-        return ResponseEntity.ok(courseService.incrementEnrollment(id));
+    public ResponseEntity<CourseResponse> incrementEnrollment(@PathVariable("id") Long courseId) {
+        return ResponseEntity.ok(courseService.incrementEnrollment(courseId));
     }
 
 }
