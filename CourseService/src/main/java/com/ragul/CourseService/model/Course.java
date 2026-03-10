@@ -2,6 +2,8 @@ package com.ragul.CourseService.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -40,21 +42,18 @@ public class Course {
     @Column(nullable = false)
     private CourseStatus status;
 
+    @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    // instant is better to use for diff time zones instead of local date time
+
+    @UpdateTimestamp
     private LocalDateTime updatedAt;
 
     @PrePersist
     protected void onCreate() {
-        createdAt = LocalDateTime.now();
-        updatedAt = LocalDateTime.now();
         if (currentEnrollment == null) currentEnrollment = 0;
-    }
-
-    @PreUpdate
-    public void onUpdate() {
-        this.updatedAt = LocalDateTime.now();
     }
 
 }
